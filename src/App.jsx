@@ -30,6 +30,8 @@ function App() {
   //game over
   const [isGameOver, setIsGameOver] = useState(false);
 
+  //for correct details
+  const [isCorrect,setIsCorrect] = useState(false);
   
 
   //on answering every question,each of the question object must have a non empty string for selectedAnswer

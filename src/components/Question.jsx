@@ -82,9 +82,19 @@ export default function Question(props){
 
     return (
         <div className='question-container'>
+            <div className='question-block'>
+            <div>
             <h3 className='question-title'>{atob(props.question)}</h3>
             {answersElement}
+            </div>
+            <div>
+                {
+                    props.showAnswer && (props.selectedAnswer === props.correct ? 'correct' : "incorrect")
+                }
+            </div>
+            </div>
             <div className='line'></div>
+
         </div>
     )
 }

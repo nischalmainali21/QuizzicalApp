@@ -93,6 +93,13 @@ body{
 .question-container{
   width: 100%;
   text-align: left;
+  
+}
+
+.question-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .question-title{
